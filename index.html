@@ -1,13 +1,16 @@
 <style>
   body {
     margin: 0;
-    height: 100vh;
-    background-color: #121212; /* Dark theme */
+    min-height: 100vh;
+    background-color: #121212;
     font-family: sans-serif;
     color: white;
     display: flex;
-    justify-content: center; /* center the whole block vertically */
-    align-items: center; /* center horizontally */
+    flex-direction: column;
+    justify-content: center; /* ✅ Center vertically */
+    align-items: center; /* ✅ Center horizontally */
+    padding: 2rem 1rem;
+    box-sizing: border-box;
   }
 
   :root {
@@ -25,25 +28,6 @@
     --dec-winter-sky: #5db5ef;
   }
 
-  /* Fade-in animation for title only */
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Wrapper for title + ribbon */
-  .poster-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   /* Title styling */
   .seasonal-title {
     font-size: 2rem;
@@ -51,20 +35,53 @@
     text-align: center;
     letter-spacing: 0.5px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-    animation: fadeInUp 1.2s ease-out forwards;
-    margin-bottom: 2rem; /* space between title and ribbon */
+    margin-bottom: 2rem;
   }
 
+  /* Ribbon container */
   .seasonal-ribbon {
-    display: flex;
-    gap: 2px;
-    height: 100px;
-    background-color: #121212;
+    display: grid;
+    gap: 2px; /* ✅ Reduced gap */
+    width: 100%;
+    max-width: 1440px; /* ✅ Increased to fit 12 months in one row */
+  }
+
+  /* Desktop: all in one row */
+  @media (min-width: 1440px) {
+    .seasonal-ribbon {
+      grid-template-columns: repeat(12, minmax(100px, 1fr));
+    }
+  }
+
+  /* Large tablet: 6/6 */
+  @media (max-width: 1439px) and (min-width: 900px) {
+    .seasonal-ribbon {
+      grid-template-columns: repeat(6, minmax(100px, 1fr));
+    }
+  }
+
+  /* Medium tablet: 4/4/4 */
+  @media (max-width: 899px) and (min-width: 700px) {
+    .seasonal-ribbon {
+      grid-template-columns: repeat(4, minmax(100px, 1fr));
+    }
+  }
+
+  /* Small tablet: 3/3/3/3 */
+  @media (max-width: 699px) and (min-width: 500px) {
+    .seasonal-ribbon {
+      grid-template-columns: repeat(3, minmax(100px, 1fr));
+    }
+  }
+
+  /* Mobile: 2/2/2/2/2/2 */
+  @media (max-width: 499px) {
+    .seasonal-ribbon {
+      grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
   }
 
   .ribbon-month {
-    flex: 1;
-    width: 92px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,15 +90,19 @@
     padding: 0.5rem;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 100px;
+    min-width: 100px;
   }
 
-  .ribbon-month:first-child {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-  }
-  .ribbon-month:last-child {
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+  /* Hover scale effect (desktop only) */
+  @media (hover: hover) {
+    .ribbon-month:hover {
+      transform: scale(1.05);
+      z-index: 2;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
   }
 
   .ribbon-month::before {
@@ -89,6 +110,16 @@
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.25);
+  }
+
+  /* ✅ Rounded corners per row */
+  .ribbon-month.first-in-row {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .ribbon-month.last-in-row {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
 
   .month-label,
@@ -122,71 +153,130 @@
     font-size: 0.8rem;
     opacity: 0.95;
   }
+
+  /* Copy feedback */
+  .copied {
+    position: absolute;
+    bottom: 4px;
+    font-size: 0.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2px 6px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  .ribbon-month.show-feedback .copied {
+    opacity: 1;
+  }
 </style>
 
-<div class="poster-block">
-  <div class="seasonal-title">jūniro – the twelve colors 🍂</div>
+<div class="seasonal-title">jūniro – the twelve colors 🍂</div>
 
-  <div class="seasonal-ribbon">
-    <div class="ribbon-month" style="background: var(--jan-clear-ice)">
-      <div class="month-label">Jan</div>
-      <div class="sekki-label">Clear Ice</div>
-      <div class="jp-label">shōkan 小寒</div>
-    </div>
-    <div class="ribbon-month" style="background: var(--feb-budding-shore)">
-      <div class="month-label">Feb</div>
-      <div class="sekki-label">Budding Shore</div>
-      <div class="jp-label">usui 雨水</div>
-    </div>
-    <div class="ribbon-month" style="background: var(--mar-sprouting-fields)">
-      <div class="month-label">Mar</div>
-      <div class="sekki-label">Sprouting Fields</div>
-      <div class="jp-label">keichitsu 啓蟄</div>
-    </div>
-    <div class="ribbon-month" style="background: var(--apr-young-rice)">
-      <div class="month-label">Apr</div>
-      <div class="sekki-label">Young Rice</div>
-      <div class="jp-label">seimei 清明</div>
-    </div>
-    <div class="ribbon-month" style="background: var(--may-early-grain)">
-      <div class="month-label">May</div>
-      <div class="sekki-label">Early Grain</div>
-      <div class="jp-label">shōman 小満</div>
-    </div>
-    <div class="ribbon-month" style="background: var(--jun-summer-sol)">
-      <div class="month-label">Jun</div>
-      <div class="sekki-label">Summer Sol</div>
-      <div class="jp-label">geshi 夏至</div>
-    </div>
-    <div class="ribbon-month" style="background: var(--jul-heat-haze)">
-      <div class="month-label">Jul</div>
-      <div class="sekki-label">Heat Haze</div>
-      <div class="jp-label">shōsho 小暑</div>
-    </div>
-    <div class="ribbon-month" style="background: var(--aug-evening-festival)">
-      <div class="month-label">Aug</div>
-      <div class="sekki-label">Evening Festival</div>
-      <div class="jp-label">obon お盆</div>
-    </div>
-    <div class="ribbon-month" style="background: var(--sep-purple-dew)">
-      <div class="month-label">Sep</div>
-      <div class="sekki-label">Purple Dew</div>
-      <div class="jp-label">hakuro 白露</div>
-    </div>
-    <div class="ribbon-month" style="background: var(--oct-chrysanthemum-moon)">
-      <div class="month-label">Oct</div>
-      <div class="sekki-label">Chrysanthemum Moon</div>
-      <div class="jp-label">kangetsu 観月</div>
-    </div>
-    <div class="ribbon-month" style="background: var(--nov-early-frost)">
-      <div class="month-label">Nov</div>
-      <div class="sekki-label">Early Frost</div>
-      <div class="jp-label">sōkō 霜降</div>
-    </div>
-    <div class="ribbon-month" style="background: var(--dec-winter-sky)">
-      <div class="month-label">Dec</div>
-      <div class="sekki-label">Winter Sky</div>
-      <div class="jp-label">tōji 冬至</div>
-    </div>
+<div class="seasonal-ribbon">
+  <div class="ribbon-month" style="background: var(--jan-clear-ice)" data-hex="#3dbed2">
+    <div class="month-label">Jan</div>
+    <div class="sekki-label">Clear Ice</div>
+    <div class="jp-label">shōkan 小寒</div>
+    <div class="copied">Copied!</div>
+  </div>
+  <div class="ribbon-month" style="background: var(--feb-budding-shore)" data-hex="#40c3ae">
+    <div class="month-label">Feb</div>
+    <div class="sekki-label">Budding Shore</div>
+    <div class="jp-label">usui 雨水</div>
+    <div class="copied">Copied!</div>
+  </div>
+  <div class="ribbon-month" style="background: var(--mar-sprouting-fields)" data-hex="#5ac577">
+    <div class="month-label">Mar</div>
+    <div class="sekki-label">Sprouting Fields</div>
+    <div class="jp-label">keichitsu 啓蟄</div>
+    <div class="copied">Copied!</div>
+  </div>
+  <div class="ribbon-month" style="background: var(--apr-young-rice)" data-hex="#a0b93b">
+    <div class="month-label">Apr</div>
+    <div class="sekki-label">Young Rice</div>
+    <div class="jp-label">seimei 清明</div>
+    <div class="copied">Copied!</div>
+  </div>
+  <div class="ribbon-month" style="background: var(--may-early-grain)" data-hex="#cca737">
+    <div class="month-label">May</div>
+    <div class="sekki-label">Early Grain</div>
+    <div class="jp-label">shōman 小満</div>
+    <div class="copied">Copied!</div>
+  </div>
+  <div class="ribbon-month" style="background: var(--jun-summer-sol)" data-hex="#ea9549">
+    <div class="month-label">Jun</div>
+    <div class="sekki-label">Summer Sol</div>
+    <div class="jp-label">geshi 夏至</div>
+    <div class="copied">Copied!</div>
+  </div>
+  <div class="ribbon-month" style="background: var(--jul-heat-haze)" data-hex="#f28a7a">
+    <div class="month-label">Jul</div>
+    <div class="sekki-label">Heat Haze</div>
+    <div class="jp-label">shōsho 小暑</div>
+    <div class="copied">Copied!</div>
+  </div>
+  <div class="ribbon-month" style="background: var(--aug-evening-festival)" data-hex="#f481a8">
+    <div class="month-label">Aug</div>
+    <div class="sekki-label">Evening Festival</div>
+    <div class="jp-label">obon お盆</div>
+    <div class="copied">Copied!</div>
+  </div>
+  <div class="ribbon-month" style="background: var(--sep-purple-dew)" data-hex="#e382dc">
+    <div class="month-label">Sep</div>
+    <div class="sekki-label">Purple Dew</div>
+    <div class="jp-label">hakuro 白露</div>
+    <div class="copied">Copied!</div>
+  </div>
+  <div class="ribbon-month" style="background: var(--oct-chrysanthemum-moon)" data-hex="#b996f5">
+    <div class="month-label">Oct</div>
+    <div class="sekki-label">Chrysanthemum Moon</div>
+    <div class="jp-label">kangetsu 観月</div>
+    <div class="copied">Copied!</div>
+  </div>
+  <div class="ribbon-month" style="background: var(--nov-early-frost)" data-hex="#8fa8f3">
+    <div class="month-label">Nov</div>
+    <div class="sekki-label">Early Frost</div>
+    <div class="jp-label">sōkō 霜降</div>
+    <div class="copied">Copied!</div>
+  </div>
+  <div class="ribbon-month" style="background: var(--dec-winter-sky)" data-hex="#5db5ef">
+    <div class="month-label">Dec</div>
+    <div class="sekki-label">Winter Sky</div>
+    <div class="jp-label">tōji 冬至</div>
+    <div class="copied">Copied!</div>
   </div>
 </div>
+
+<script>
+  // Assign first/last-in-row classes dynamically based on current layout
+  function updateCornerClasses() {
+    const ribbon = document.querySelector(".seasonal-ribbon");
+    const items = ribbon.querySelectorAll(".ribbon-month");
+    const columns = getComputedStyle(ribbon)
+      .gridTemplateColumns.split(" ").length;
+
+    items.forEach((item, i) => {
+      item.classList.remove("first-in-row", "last-in-row");
+      if (i % columns === 0) item.classList.add("first-in-row");
+      if ((i + 1) % columns === 0) item.classList.add("last-in-row");
+    });
+  }
+
+  window.addEventListener("resize", updateCornerClasses);
+  window.addEventListener("load", updateCornerClasses);
+
+  // Click-to-copy
+  document.querySelectorAll(".ribbon-month").forEach((month) => {
+    month.addEventListener("click", () => {
+      const hex = month.getAttribute("data-hex");
+      navigator.clipboard.writeText(hex).then(() => {
+        month.classList.add("show-feedback");
+        setTimeout(() => {
+          month.classList.remove("show-feedback");
+        }, 1000);
+      });
+    });
+  });
+</script>
