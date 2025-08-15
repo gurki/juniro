@@ -10,18 +10,18 @@ A 12-color palette inspired by the **Japanese sekki** (microseasons), mapped to 
 
 | Color                                                                 | Month | Name               | Hex        | Sekki            | Meaning                       |
 |------------------------------------------------------------------------|-------|--------------------|------------|------------------|-------------------------------|
-| ![color](https://img.shields.io/badge/-%20-3dbed2?style=flat-square)     | Jan   | Clear Ice          | `#3dbed2`  | 小寒 (Shōkan)    | Deep winter, frozen rivers    |
-| ![color](https://img.shields.io/badge/-%20-40c3ae?style=flat-square)     | Feb   | Budding Shore      | `#40c3ae`  | 雨水 (Usui)      | Snow melts, water flows       |
-| ![color](https://img.shields.io/badge/-%20-5ac577?style=flat-square)     | Mar   | Sprouting Fields   | `#5ac577`  | 啓蟄 (Keichitsu) | First shoots emerge           |
-| ![color](https://img.shields.io/badge/-%20-a0b93b?style=flat-square)     | Apr   | Young Rice         | `#a0b93b`  | 清明 (Seimei)    | Fields turn fresh green       |
-| ![color](https://img.shields.io/badge/-%20-cca737?style=flat-square)     | May   | Early Grain        | `#cca737`  | 小満 (Shōman)    | Barley ripens                 |
-| ![color](https://img.shields.io/badge/-%20-ea9549?style=flat-square)     | Jun   | Summer Sol         | `#ea9549`  | 夏至 (Geshi)     | Sun at its zenith             |
-| ![color](https://img.shields.io/badge/-%20-f28a7a?style=flat-square)     | Jul   | Heat Haze          | `#f28a7a`  | 小暑 (Shōsho)    | Warm winds, cicadas sing      |
-| ![color](https://img.shields.io/badge/-%20-f481a8?style=flat-square)     | Aug   | Evening Festival   | `#f481a8`  | お盆 (Obon)      | Lanterns and blossoms         |
-| ![color](https://img.shields.io/badge/-%20-e382dc?style=flat-square)     | Sep   | Purple Dew         | `#e382dc`  | 白露 (Hakuro)    | Cool mornings, autumn flowers |
-| ![color](https://img.shields.io/badge/-%20-b996f5?style=flat-square)     | Oct   | Chrysanthemum Moon | `#b996f5`  | 観月 (Kangetsu)  | Harvest moon nights           |
-| ![color](https://img.shields.io/badge/-%20-8fa8f3?style=flat-square)     | Nov   | Early Frost        | `#8fa8f3`  | 霜降 (Sōkō)      | Frost on the fields           |
-| ![color](https://img.shields.io/badge/-%20-5db5ef?style=flat-square)     | Dec   | Winter Sky         | `#5db5ef`  | 冬至 (Tōji)      | Clear, cold solstice days     |
+| ![color](https://img.shields.io/badge/-%20-3dbed2?style=for-the-badge)     | Jan   | Clear Ice          | `#3dbed2`  | 小寒 (Shōkan)    | Deep winter, frozen rivers    |
+| ![color](https://img.shields.io/badge/-%20-40c3ae?style=for-the-badge)     | Feb   | Budding Shore      | `#40c3ae`  | 雨水 (Usui)      | Snow melts, water flows       |
+| ![color](https://img.shields.io/badge/-%20-5ac577?style=for-the-badge)     | Mar   | Sprouting Fields   | `#5ac577`  | 啓蟄 (Keichitsu) | First shoots emerge           |
+| ![color](https://img.shields.io/badge/-%20-a0b93b?style=for-the-badge)     | Apr   | Young Rice         | `#a0b93b`  | 清明 (Seimei)    | Fields turn fresh green       |
+| ![color](https://img.shields.io/badge/-%20-cca737?style=for-the-badge)     | May   | Early Grain        | `#cca737`  | 小満 (Shōman)    | Barley ripens                 |
+| ![color](https://img.shields.io/badge/-%20-ea9549?style=for-the-badge)     | Jun   | Summer Sol         | `#ea9549`  | 夏至 (Geshi)     | Sun at its zenith             |
+| ![color](https://img.shields.io/badge/-%20-f28a7a?style=for-the-badge)     | Jul   | Heat Haze          | `#f28a7a`  | 小暑 (Shōsho)    | Warm winds, cicadas sing      |
+| ![color](https://img.shields.io/badge/-%20-f481a8?style=for-the-badge)     | Aug   | Evening Festival   | `#f481a8`  | お盆 (Obon)      | Lanterns and blossoms         |
+| ![color](https://img.shields.io/badge/-%20-e382dc?style=for-the-badge)     | Sep   | Purple Dew         | `#e382dc`  | 白露 (Hakuro)    | Cool mornings, autumn flowers |
+| ![color](https://img.shields.io/badge/-%20-b996f5?style=for-the-badge)     | Oct   | Chrysanthemum Moon | `#b996f5`  | 観月 (Kangetsu)  | Harvest moon nights           |
+| ![color](https://img.shields.io/badge/-%20-8fa8f3?style=for-the-badge)     | Nov   | Early Frost        | `#8fa8f3`  | 霜降 (Sōkō)      | Frost on the fields           |
+| ![color](https://img.shields.io/badge/-%20-5db5ef?style=for-the-badge)     | Dec   | Winter Sky         | `#5db5ef`  | 冬至 (Tōji)      | Clear, cold solstice days     |
 
 
 ## 📦 Usage
