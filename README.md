@@ -7,7 +7,7 @@
 
 A 12-color palette inspired by the **Japanese sekki** (microseasons), mapped to each month of the year. Each color reflects seasonal changes in nature, festivals, and traditional imagery.
 
-![overview](img/juniro-3.png)
+![Preview](img/juniro-3.png)
 
 
 ## 📅 The Twelve Colors
@@ -58,8 +58,11 @@ body {
 ```
 
 
-## 🌐 Demo
-[Live Preview](https://gurki.github.io/juniro/)
+## 🌐 Examples
+- [Live Preview](https://gurki.github.io/juniro/)
+- `weekly-cli` - terminal-based caldav availability
+
+![weekly-cli](img/2025-07-24_first-caldav.png)
 
 
 ## 📜 License
