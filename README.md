@@ -1,3 +1,7 @@
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=code&logoColor=white)
+
 # jūniro 🍂
 > from _"jūni no iro"_ — _"the twelve colors"_
 
