@@ -7,7 +7,7 @@
 
 A 12-color palette inspired by the **Japanese sekki** (microseasons), mapped to each month of the year. Each color reflects seasonal changes in nature, festivals, and traditional imagery.
 
-![overview](img/juniro-3.png)
+![overview](img/juniro-1.png)
 
 
 ## 📅 The Twelve Colors
