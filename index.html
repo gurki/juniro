@@ -41,7 +41,7 @@
   /* Ribbon container */
   .seasonal-ribbon {
     display: grid;
-    gap: 2px; /* ✅ Reduced gap */
+    gap: 1px; /* ✅ Reduced gap */
     width: 100%;
     max-width: 1440px; /* ✅ Increased to fit 12 months in one row */
   }
@@ -127,18 +127,18 @@
   .jp-label {
     position: relative;
     z-index: 1;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8),
-      0 0 2px rgba(0, 0, 0, 0.6);
+    /* text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8),
+      0 0 2px rgba(0, 0, 0, 0.6); */
   }
 
   .month-label {
-    font-weight: bold;
-    font-size: 1rem;
+    /* font-weight: bold; */
+    font-size: 1.8rem;
     margin-bottom: 0.25rem;
   }
 
   .sekki-label {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 500;
     line-height: 1.1;
     min-height: 2.2em;
@@ -147,6 +147,7 @@
     justify-content: center;
     text-align: center;
     white-space: pre-line;
+    vertical-align: top;
   }
 
   .jp-label {
