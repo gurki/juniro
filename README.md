@@ -1,38 +1,27 @@
----
-title: jūniro
-symbol: 🍂
-tags: []
-status: draft
-createdAt: 2025-08-15T02:26:15+02:00
-description: 
----
-
-
 # jūniro 🍂
+> from _"jūni no iro"_ — _"the twelve colors"_
 
-**jūniro** (from *jūni no iro*, "the twelve colors") is a 12-color palette inspired by the **Japanese sekki** (seasonal microseasons), mapped to each month of the year.  
+A 12-color palette inspired by the **Japanese sekki** (microseasons), mapped to each month of the year. Each color reflects seasonal changes in nature, festivals, and traditional imagery.
 
-Each color reflects seasonal changes in nature, festivals, and traditional imagery.
-
-![Palette Preview](img/preview.png)
+![overview](img/preview.png)
 
 
 ## 📅 The Twelve Colors
 
-| Month | Name | Hex | Sekki | Meaning |
-|-------|------|-----|-------|---------|
-| Jan   | Clear Ice          | `#3dbed2` | 小寒 (Shōkan) | Deep winter, frozen rivers |
-| Feb   | Budding Shore      | `#40c3ae` | 雨水 (Usui) | Snow melts, water flows |
-| Mar   | Sprouting Fields   | `#5ac577` | 啓蟄 (Keichitsu) | First shoots emerge |
-| Apr   | Young Rice         | `#a0b93b` | 清明 (Seimei) | Fields turn fresh green |
-| May   | Early Grain        | `#cca737` | 小満 (Shōman) | Barley ripens |
-| Jun   | Summer Sol         | `#ea9549` | 夏至 (Geshi) | Sun at its zenith |
-| Jul   | Heat Haze          | `#f28a7a` | 小暑 (Shōsho) | Warm winds, cicadas sing |
-| Aug   | Evening Festival   | `#f481a8` | お盆 (Obon) | Lanterns and blossoms |
-| Sep   | Purple Dew         | `#e382dc` | 白露 (Hakuro) | Cool mornings, autumn flowers |
-| Oct   | Chrysanthemum Moon | `#b996f5` | 観月 (Kangetsu) | Harvest moon nights |
-| Nov   | Early Frost        | `#8fa8f3` | 霜降 (Sōkō) | Frost on the fields |
-| Dec   | Winter Sky         | `#5db5ef` | 冬至 (Tōji) | Clear, cold solstice days |
+| Month | Name               | Hex       | Sekki            | Meaning                       |
+| ----- | ------------------ | --------- | ---------------- | ----------------------------- |
+| Jan   | Clear Ice          | `#3dbed2` | 小寒 (Shōkan)    | Deep winter, frozen rivers    |
+| Feb   | Budding Shore      | `#40c3ae` | 雨水 (Usui)      | Snow melts, water flows       |
+| Mar   | Sprouting Fields   | `#5ac577` | 啓蟄 (Keichitsu) | First shoots emerge           |
+| Apr   | Young Rice         | `#a0b93b` | 清明 (Seimei)    | Fields turn fresh green       |
+| May   | Early Grain        | `#cca737` | 小満 (Shōman)    | Barley ripens                 |
+| Jun   | Summer Sol         | `#ea9549` | 夏至 (Geshi)     | Sun at its zenith             |
+| Jul   | Heat Haze          | `#f28a7a` | 小暑 (Shōsho)    | Warm winds, cicadas sing      |
+| Aug   | Evening Festival   | `#f481a8` | お盆 (Obon)      | Lanterns and blossoms         |
+| Sep   | Purple Dew         | `#e382dc` | 白露 (Hakuro)    | Cool mornings, autumn flowers |
+| Oct   | Chrysanthemum Moon | `#b996f5` | 観月 (Kangetsu)  | Harvest moon nights           |
+| Nov   | Early Frost        | `#8fa8f3` | 霜降 (Sōkō)      | Frost on the fields           |
+| Dec   | Winter Sky         | `#5db5ef` | 冬至 (Tōji)      | Clear, cold solstice days     |
 
 
 ## 📦 Usage

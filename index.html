@@ -1,51 +1,192 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sekki Color Palette</title>
-    <link rel="stylesheet" href="palette.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Sekki Color Palette</h1>
-    <div class="palette">
-      <div class="color" style="--color: var(--jan-clear-ice)">
-        Jan — Clear Ice
-      </div>
-      <div class="color" style="--color: var(--feb-budding-shore)">
-        Feb — Budding Shore
-      </div>
-      <div class="color" style="--color: var(--mar-sprouting-fields)">
-        Mar — Sprouting Fields
-      </div>
-      <div class="color" style="--color: var(--apr-young-rice)">
-        Apr — Young Rice
-      </div>
-      <div class="color" style="--color: var(--may-early-grain)">
-        May — Early Grain
-      </div>
-      <div class="color" style="--color: var(--jun-summer-sol)">
-        Jun — Summer Sol
-      </div>
-      <div class="color" style="--color: var(--jul-heat-haze)">
-        Jul — Heat Haze
-      </div>
-      <div class="color" style="--color: var(--aug-evening-festival)">
-        Aug — Evening Festival
-      </div>
-      <div class="color" style="--color: var(--sep-purple-dew)">
-        Sep — Purple Dew
-      </div>
-      <div class="color" style="--color: var(--oct-chrysanthemum-moon)">
-        Oct — Chrysanthemum Moon
-      </div>
-      <div class="color" style="--color: var(--nov-early-frost)">
-        Nov — Early Frost
-      </div>
-      <div class="color" style="--color: var(--dec-winter-sky)">
-        Dec — Winter Sky
-      </div>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background-color: #121212; /* Dark theme */
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center; /* center the whole block vertically */
+    align-items: center; /* center horizontally */
+  }
+
+  :root {
+    --jan-clear-ice: #3dbed2;
+    --feb-budding-shore: #40c3ae;
+    --mar-sprouting-fields: #5ac577;
+    --apr-young-rice: #a0b93b;
+    --may-early-grain: #cca737;
+    --jun-summer-sol: #ea9549;
+    --jul-heat-haze: #f28a7a;
+    --aug-evening-festival: #f481a8;
+    --sep-purple-dew: #e382dc;
+    --oct-chrysanthemum-moon: #b996f5;
+    --nov-early-frost: #8fa8f3;
+    --dec-winter-sky: #5db5ef;
+  }
+
+  /* Fade-in animation for title only */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Wrapper for title + ribbon */
+  .poster-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Title styling */
+  .seasonal-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    animation: fadeInUp 1.2s ease-out forwards;
+    margin-bottom: 2rem; /* space between title and ribbon */
+  }
+
+  .seasonal-ribbon {
+    display: flex;
+    gap: 2px;
+    height: 100px;
+    background-color: #121212;
+  }
+
+  .ribbon-month {
+    flex: 1;
+    width: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ribbon-month:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .ribbon-month:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .ribbon-month::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+  }
+
+  .month-label,
+  .sekki-label,
+  .jp-label {
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8),
+      0 0 2px rgba(0, 0, 0, 0.6);
+  }
+
+  .month-label {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .sekki-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.1;
+    min-height: 2.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: pre-line;
+  }
+
+  .jp-label {
+    font-size: 0.8rem;
+    opacity: 0.95;
+  }
+</style>
+
+<div class="poster-block">
+  <div class="seasonal-title">jūniro – the twelve colors 🍂</div>
+
+  <div class="seasonal-ribbon">
+    <div class="ribbon-month" style="background: var(--jan-clear-ice)">
+      <div class="month-label">Jan</div>
+      <div class="sekki-label">Clear Ice</div>
+      <div class="jp-label">shōkan 小寒</div>
     </div>
-  </body>
-</html>
+    <div class="ribbon-month" style="background: var(--feb-budding-shore)">
+      <div class="month-label">Feb</div>
+      <div class="sekki-label">Budding Shore</div>
+      <div class="jp-label">usui 雨水</div>
+    </div>
+    <div class="ribbon-month" style="background: var(--mar-sprouting-fields)">
+      <div class="month-label">Mar</div>
+      <div class="sekki-label">Sprouting Fields</div>
+      <div class="jp-label">keichitsu 啓蟄</div>
+    </div>
+    <div class="ribbon-month" style="background: var(--apr-young-rice)">
+      <div class="month-label">Apr</div>
+      <div class="sekki-label">Young Rice</div>
+      <div class="jp-label">seimei 清明</div>
+    </div>
+    <div class="ribbon-month" style="background: var(--may-early-grain)">
+      <div class="month-label">May</div>
+      <div class="sekki-label">Early Grain</div>
+      <div class="jp-label">shōman 小満</div>
+    </div>
+    <div class="ribbon-month" style="background: var(--jun-summer-sol)">
+      <div class="month-label">Jun</div>
+      <div class="sekki-label">Summer Sol</div>
+      <div class="jp-label">geshi 夏至</div>
+    </div>
+    <div class="ribbon-month" style="background: var(--jul-heat-haze)">
+      <div class="month-label">Jul</div>
+      <div class="sekki-label">Heat Haze</div>
+      <div class="jp-label">shōsho 小暑</div>
+    </div>
+    <div class="ribbon-month" style="background: var(--aug-evening-festival)">
+      <div class="month-label">Aug</div>
+      <div class="sekki-label">Evening Festival</div>
+      <div class="jp-label">obon お盆</div>
+    </div>
+    <div class="ribbon-month" style="background: var(--sep-purple-dew)">
+      <div class="month-label">Sep</div>
+      <div class="sekki-label">Purple Dew</div>
+      <div class="jp-label">hakuro 白露</div>
+    </div>
+    <div class="ribbon-month" style="background: var(--oct-chrysanthemum-moon)">
+      <div class="month-label">Oct</div>
+      <div class="sekki-label">Chrysanthemum Moon</div>
+      <div class="jp-label">kangetsu 観月</div>
+    </div>
+    <div class="ribbon-month" style="background: var(--nov-early-frost)">
+      <div class="month-label">Nov</div>
+      <div class="sekki-label">Early Frost</div>
+      <div class="jp-label">sōkō 霜降</div>
+    </div>
+    <div class="ribbon-month" style="background: var(--dec-winter-sky)">
+      <div class="month-label">Dec</div>
+      <div class="sekki-label">Winter Sky</div>
+      <div class="jp-label">tōji 冬至</div>
+    </div>
+  </div>
+</div>
