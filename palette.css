@@ -1,0 +1,14 @@
+:root {
+  --jan-clear-ice:          #3dbed2;    /* shōkan 小寒: deep winter, frozen rivers */
+  --feb-budding-shore:      #40c3ae;    /* usui 雨水: snow melts, water flows */
+  --mar-sprouting-fields:   #5ac577;    /* keichitsu 啓蟄: first shoots emerge */
+  --apr-young-rice:         #a0b93b;    /* seimei 清明: fields turn fresh green */
+  --may-early-grain:        #cca737;    /* shōman 小満: barley ripens */
+  --jun-summer-sol:         #ea9549;    /* geshi 夏至: sun at its zenith */
+  --jul-heat-haze:          #f28a7a;    /* shōsho 小暑: warm winds, cicadas sing */
+  --aug-evening-festival:   #f481a8;    /* obon お盆: lanterns and blossoms */
+  --sep-purple-dew:         #e382dc;    /* hakuro 白露: cool mornings, autumn flowers */
+  --oct-chrysanthemum-moon: #b996f5;    /* kangetsu 観月: harvest moon nights */
+  --nov-early-frost:        #8fa8f3;    /* sōkō 霜降: frost on the fields */
+  --dec-winter-sky:         #5db5ef;    /* tōji 冬至: clear, cold solstice days */
+}
