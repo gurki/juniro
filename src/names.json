@@ -2,145 +2,121 @@
   {
     "month": 1,
     "name": "Clear Ice",
-    "id": "jan_clear_ice",
+    "emoji": "🧊",
     "sekki": {
       "romaji": "Shōkan",
       "kanji": "小寒",
       "description": "Minor Cold"
-    },
-    "hex": "#3dbed2",
-    "rgb": [61, 190, 210]
+    }
   },
   {
     "month": 2,
     "name": "Budding Shore",
-    "id": "feb_budding_shore",
+    "emoji": "🌊",
     "sekki": {
       "romaji": "Usui",
       "kanji": "雨水",
       "description": "Rain Water"
-    },
-    "hex": "#40c3ae",
-    "rgb": [64, 195, 174]
+    }
   },
   {
     "month": 3,
     "name": "Sprouting Fields",
-    "id": "mar_sprouting_fields",
+    "emoji": "🐛",
     "sekki": {
       "romaji": "Keichitsu",
       "kanji": "啓蟄",
       "description": "Awakening of Insects"
-    },
-    "hex": "#5ac577",
-    "rgb": [90, 197, 119]
+    }
   },
   {
     "month": 4,
     "name": "Young Rice",
-    "id": "apr_young_rice",
+    "emoji": "🌱",
     "sekki": {
       "romaji": "Seimei",
       "kanji": "清明",
       "description": "Clear and Bright"
-    },
-    "hex": "#a0b93b",
-    "rgb": [160, 185, 59]
+    }
   },
   {
     "month": 5,
     "name": "Early Grain",
-    "id": "may_early_grain",
+    "emoji": "🌾",
     "sekki": {
       "romaji": "Shōman",
       "kanji": "小満",
       "description": "Lesser Fullness of Grain"
-    },
-    "hex": "#cca737",
-    "rgb": [204, 167, 55]
+    }
   },
   {
     "month": 6,
     "name": "Summer Solstice",
-    "id": "jun_summer_sol",
+    "emoji": "☀️",
     "sekki": {
       "romaji": "Geshi",
       "kanji": "夏至",
       "description": "Summer Solstice"
-    },
-    "hex": "#ea9549",
-    "rgb": [234, 149, 73]
+    }
   },
   {
     "month": 7,
     "name": "Heat Haze",
-    "id": "jul_heat_haze",
+    "emoji": "🔥",
     "sekki": {
       "romaji": "Shōsho",
       "kanji": "小暑",
       "description": "Lesser Heat"
-    },
-    "hex": "#f28a7a",
-    "rgb": [242, 138, 122]
+    }
   },
   {
     "month": 8,
     "name": "Evening Festival",
-    "id": "aug_evening_festival",
+    "emoji": "🍂",
     "sekki": {
       "romaji": "Risshū",
       "kanji": "立秋",
       "description": "Beginning of Autumn"
-    },
-    "hex": "#f481a8",
-    "rgb": [244, 129, 168]
+    }
   },
   {
     "month": 9,
     "name": "Purple Dew",
-    "id": "sep_purple_dew",
+    "emoji": "🌗",
     "sekki": {
       "romaji": "Shūbun",
       "kanji": "秋分",
       "description": "Autumn Equinox"
-    },
-    "hex": "#e382dc",
-    "rgb": [227, 130, 220]
+    }
   },
   {
     "month": 10,
     "name": "Chrysanthemum Moon",
-    "id": "oct_chrysanthemum_moon",
+    "emoji": "🌼",
     "sekki": {
       "romaji": "Kanro",
       "kanji": "寒露",
       "description": "Cold Dew"
-    },
-    "hex": "#b996f5",
-    "rgb": [185, 150, 245]
+    }
   },
   {
     "month": 11,
     "name": "Early Frost",
-    "id": "nov_early_frost",
+    "emoji": "❄️",
     "sekki": {
       "romaji": "Rittō",
       "kanji": "立冬",
       "description": "Beginning of Winter"
-    },
-    "hex": "#8fa8f3",
-    "rgb": [143, 168, 243]
+    }
   },
   {
     "month": 12,
     "name": "Winter Sky",
-    "id": "dec_winter_sky",
+    "emoji": "🌨️",
     "sekki": {
       "romaji": "Taisetsu",
       "kanji": "大雪",
       "description": "Major Snow"
-    },
-    "hex": "#5db5ef",
-    "rgb": [93, 181, 239]
+    }
   }
 ]

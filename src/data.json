@@ -1,0 +1,510 @@
+{
+  "description": "auto-generated juniro color palette source of truth",
+  "createdAt": "2025-08-18T23:58:45.403Z",
+  "data": [
+    {
+      "month": 1,
+      "name": "Clear Ice",
+      "emoji": "🧊",
+      "sekki": {
+        "romaji": "Shōkan",
+        "kanji": "小寒",
+        "description": "Minor Cold"
+      },
+      "ascii": "\u001b[38;2;61;190;210m■\u001b[39m",
+      "html": "<div style=\"display: inline-block; width: 1em; height: 1em; background-color: #3dbed2;\"></div>",
+      "abbreviation": "jan",
+      "id": "jan_clear_ice",
+      "hex": "#3dbed2",
+      "decimal": 252909,
+      "srgb8": [
+        61,
+        190,
+        210
+      ],
+      "okhsl": [
+        210,
+        0.8,
+        0.7
+      ],
+      "srgb": [
+        0.24015105575721102,
+        0.746791892071121,
+        0.8254560073264672
+      ],
+      "lrgb": [
+        0.0470219370083228,
+        0.5175378072682931,
+        0.6478768817247178
+      ],
+      "oklab": [
+        0.7419818714645947,
+        -0.09740161636499367,
+        -0.05623484942783377
+      ],
+      "labpack": "0xbde671c6"
+    },
+    {
+      "month": 2,
+      "name": "Budding Shore",
+      "emoji": "🌊",
+      "sekki": {
+        "romaji": "Usui",
+        "kanji": "雨水",
+        "description": "Rain Water"
+      },
+      "ascii": "\u001b[38;2;64;195;174m■\u001b[39m",
+      "html": "<div style=\"display: inline-block; width: 1em; height: 1em; background-color: #40c3ae;\"></div>",
+      "abbreviation": "feb",
+      "id": "feb_budding_shore",
+      "hex": "#40c3ae",
+      "decimal": 265274,
+      "srgb8": [
+        64,
+        195,
+        174
+      ],
+      "okhsl": [
+        180,
+        0.8,
+        0.7
+      ],
+      "srgb": [
+        0.25008203865222156,
+        0.7659997693732286,
+        0.6829881866694631
+      ],
+      "lrgb": [
+        0.05090893741692512,
+        0.5477941388296337,
+        0.42414336801808905
+      ],
+      "oklab": [
+        0.7419818714645947,
+        -0.11696791972858656,
+        1.4324438849853807e-17
+      ],
+      "labpack": "0xbde62200"
+    },
+    {
+      "month": 3,
+      "name": "Sprouting Fields",
+      "emoji": "🐛",
+      "sekki": {
+        "romaji": "Keichitsu",
+        "kanji": "啓蟄",
+        "description": "Awakening of Insects"
+      },
+      "ascii": "\u001b[38;2;90;197;119m■\u001b[39m",
+      "html": "<div style=\"display: inline-block; width: 1em; height: 1em; background-color: #5ac577;\"></div>",
+      "abbreviation": "mar",
+      "id": "mar_sprouting_fields",
+      "hex": "#5ac577",
+      "decimal": 371799,
+      "srgb8": [
+        90,
+        197,
+        119
+      ],
+      "okhsl": [
+        150,
+        0.8,
+        0.7
+      ],
+      "srgb": [
+        0.3532171060497019,
+        0.7743582576099132,
+        0.46555280797354953
+      ],
+      "lrgb": [
+        0.10240778571752357,
+        0.5612745009198344,
+        0.1835310719811416
+      ],
+      "oklab": [
+        0.7419818714645947,
+        -0.1304670223343711,
+        0.07532517046511805
+      ],
+      "labpack": "0xbde5ea4d"
+    },
+    {
+      "month": 4,
+      "name": "Young Rice",
+      "emoji": "🌱",
+      "sekki": {
+        "romaji": "Seimei",
+        "kanji": "清明",
+        "description": "Clear and Bright"
+      },
+      "ascii": "\u001b[38;2;160;185;59m■\u001b[39m",
+      "html": "<div style=\"display: inline-block; width: 1em; height: 1em; background-color: #a0b93b;\"></div>",
+      "abbreviation": "apr",
+      "id": "apr_young_rice",
+      "hex": "#a0b93b",
+      "decimal": 658323,
+      "srgb8": [
+        160,
+        185,
+        59
+      ],
+      "okhsl": [
+        120,
+        0.8,
+        0.7
+      ],
+      "srgb": [
+        0.6259836978435972,
+        0.7243130041722751,
+        0.2315809155933739
+      ],
+      "lrgb": [
+        0.3497214044862515,
+        0.4833956218718413,
+        0.043811440715671696
+      ],
+      "oklab": [
+        0.7419818714645947,
+        -0.07563766919666982,
+        0.13100828601471962
+      ],
+      "labpack": "0xbde6ca86"
+    },
+    {
+      "month": 5,
+      "name": "Early Grain",
+      "emoji": "🌾",
+      "sekki": {
+        "romaji": "Shōman",
+        "kanji": "小満",
+        "description": "Lesser Fullness of Grain"
+      },
+      "ascii": "\u001b[38;2;204;167;55m■\u001b[39m",
+      "html": "<div style=\"display: inline-block; width: 1em; height: 1em; background-color: #cca737;\"></div>",
+      "abbreviation": "may",
+      "id": "may_early_grain",
+      "hex": "#cca737",
+      "decimal": 838259,
+      "srgb8": [
+        204,
+        167,
+        55
+      ],
+      "okhsl": [
+        90,
+        0.8,
+        0.7
+      ],
+      "srgb": [
+        0.7995126896337987,
+        0.6546425221575652,
+        0.2148826273992102
+      ],
+      "lrgb": [
+        0.6030016997428805,
+        0.38609058448805744,
+        0.037932714969131406
+      ],
+      "oklab": [
+        0.7419818714645947,
+        8.119116366569323e-18,
+        0.13259523271888954
+      ],
+      "labpack": "0xbde80287"
+    },
+    {
+      "month": 6,
+      "name": "Summer Solstice",
+      "emoji": "☀️",
+      "sekki": {
+        "romaji": "Geshi",
+        "kanji": "夏至",
+        "description": "Summer Solstice"
+      },
+      "ascii": "\u001b[38;2;234;149;73m■\u001b[39m",
+      "html": "<div style=\"display: inline-block; width: 1em; height: 1em; background-color: #ea9549;\"></div>",
+      "abbreviation": "jun",
+      "id": "jun_summer_solstice",
+      "hex": "#ea9549",
+      "decimal": 960852,
+      "srgb8": [
+        234,
+        149,
+        73
+      ],
+      "okhsl": [
+        60,
+        0.8,
+        0.7
+      ],
+      "srgb": [
+        0.9157338932824137,
+        0.583532809773676,
+        0.28464207816146037
+      ],
+      "lrgb": [
+        0.8189069573846813,
+        0.299663480224813,
+        0.0658636313730824
+      ],
+      "oklab": [
+        0.7419818714645947,
+        0.06830867088183336,
+        0.11831408856483609
+      ],
+      "labpack": "0xbde91679"
+    },
+    {
+      "month": 7,
+      "name": "Heat Haze",
+      "emoji": "🔥",
+      "sekki": {
+        "romaji": "Shōsho",
+        "kanji": "小暑",
+        "description": "Lesser Heat"
+      },
+      "ascii": "\u001b[38;2;242;138;122m■\u001b[39m",
+      "html": "<div style=\"display: inline-block; width: 1em; height: 1em; background-color: #f28a7a;\"></div>",
+      "abbreviation": "jul",
+      "id": "jul_heat_haze",
+      "hex": "#f28a7a",
+      "decimal": 993447,
+      "srgb8": [
+        242,
+        138,
+        122
+      ],
+      "okhsl": [
+        30,
+        0.8,
+        0.7
+      ],
+      "srgb": [
+        0.9485934128005119,
+        0.5424358265265498,
+        0.47798165452959623
+      ],
+      "lrgb": [
+        0.8870187945302284,
+        0.25544248282613624,
+        0.1942242810370755
+      ],
+      "oklab": [
+        0.7419818714645947,
+        0.11201565602812907,
+        0.06467226916129283
+      ],
+      "labpack": "0xbde9ca42"
+    },
+    {
+      "month": 8,
+      "name": "Evening Festival",
+      "emoji": "🍂",
+      "sekki": {
+        "romaji": "Risshū",
+        "kanji": "立秋",
+        "description": "Beginning of Autumn"
+      },
+      "ascii": "\u001b[38;2;244;129;168m■\u001b[39m",
+      "html": "<div style=\"display: inline-block; width: 1em; height: 1em; background-color: #f481a8;\"></div>",
+      "abbreviation": "aug",
+      "id": "aug_evening_festival",
+      "hex": "#f481a8",
+      "decimal": 1001498,
+      "srgb8": [
+        244,
+        129,
+        168
+      ],
+      "okhsl": [
+        0,
+        0.8,
+        0.7
+      ],
+      "srgb": [
+        0.9586228114374554,
+        0.5054734295713057,
+        0.6571194739664947
+      ],
+      "lrgb": [
+        0.9084424055105074,
+        0.2191422750069435,
+        0.3893327761654779
+      ],
+      "oklab": [
+        0.7419818714645947,
+        0.14644102606887996,
+        0
+      ],
+      "labpack": "0xbdea5600"
+    },
+    {
+      "month": 9,
+      "name": "Purple Dew",
+      "emoji": "🌗",
+      "sekki": {
+        "romaji": "Shūbun",
+        "kanji": "秋分",
+        "description": "Autumn Equinox"
+      },
+      "ascii": "\u001b[38;2;227;130;220m■\u001b[39m",
+      "html": "<div style=\"display: inline-block; width: 1em; height: 1em; background-color: #e382dc;\"></div>",
+      "abbreviation": "sep",
+      "id": "sep_purple_dew",
+      "hex": "#e382dc",
+      "decimal": 931885,
+      "srgb8": [
+        227,
+        130,
+        220
+      ],
+      "okhsl": [
+        330,
+        0.8,
+        0.7
+      ],
+      "srgb": [
+        0.8921370983699611,
+        0.5105786327528522,
+        0.861820200209888
+      ],
+      "lrgb": [
+        0.7719424636423688,
+        0.22396351851944965,
+        0.7139636699706032
+      ],
+      "oklab": [
+        0.7419818714645947,
+        0.14092987061601978,
+        -0.08136589873701824
+      ],
+      "labpack": "0xbdea41ac"
+    },
+    {
+      "month": 10,
+      "name": "Chrysanthemum Moon",
+      "emoji": "🌼",
+      "sekki": {
+        "romaji": "Kanro",
+        "kanji": "寒露",
+        "description": "Cold Dew"
+      },
+      "ascii": "\u001b[38;2;185;150;245m■\u001b[39m",
+      "html": "<div style=\"display: inline-block; width: 1em; height: 1em; background-color: #b996f5;\"></div>",
+      "abbreviation": "oct",
+      "id": "oct_chrysanthemum_moon",
+      "hex": "#b996f5",
+      "decimal": 760175,
+      "srgb8": [
+        185,
+        150,
+        245
+      ],
+      "okhsl": [
+        300,
+        0.8,
+        0.7
+      ],
+      "srgb": [
+        0.7258740807279271,
+        0.5885142443725726,
+        0.9618714550747073
+      ],
+      "lrgb": [
+        0.48572282845460857,
+        0.3053048418585135,
+        0.9154457904288479
+      ],
+      "oklab": [
+        0.7419818714645947,
+        0.06905385929466297,
+        -0.11960479275706859
+      ],
+      "labpack": "0xbde91985"
+    },
+    {
+      "month": 11,
+      "name": "Early Frost",
+      "emoji": "❄️",
+      "sekki": {
+        "romaji": "Rittō",
+        "kanji": "立冬",
+        "description": "Beginning of Winter"
+      },
+      "ascii": "\u001b[38;2;143;168;243m■\u001b[39m",
+      "html": "<div style=\"display: inline-block; width: 1em; height: 1em; background-color: #8fa8f3;\"></div>",
+      "abbreviation": "nov",
+      "id": "nov_early_frost",
+      "hex": "#8fa8f3",
+      "decimal": 588431,
+      "srgb8": [
+        143,
+        168,
+        243
+      ],
+      "okhsl": [
+        270,
+        0.8,
+        0.7
+      ],
+      "srgb": [
+        0.5627057282971623,
+        0.657372183895577,
+        0.9547921123155564
+      ],
+      "lrgb": [
+        0.2767387697706045,
+        0.38966444871272643,
+        0.90022451292421
+      ],
+      "oklab": [
+        0.7419818714645947,
+        -2.0835748044192557e-17,
+        -0.11342452947086032
+      ],
+      "labpack": "0xbde8018b"
+    },
+    {
+      "month": 12,
+      "name": "Winter Sky",
+      "emoji": "🌨️",
+      "sekki": {
+        "romaji": "Taisetsu",
+        "kanji": "大雪",
+        "description": "Major Snow"
+      },
+      "ascii": "\u001b[38;2;93;181;239m■\u001b[39m",
+      "html": "<div style=\"display: inline-block; width: 1em; height: 1em; background-color: #5db5ef;\"></div>",
+      "abbreviation": "dec",
+      "id": "dec_winter_sky",
+      "hex": "#5db5ef",
+      "decimal": 383838,
+      "srgb8": [
+        93,
+        181,
+        239
+      ],
+      "okhsl": [
+        240,
+        0.8,
+        0.7
+      ],
+      "srgb": [
+        0.36658813887874364,
+        0.7094463292786615,
+        0.9361491244467411
+      ],
+      "lrgb": [
+        0.11064357961841231,
+        0.4615586515939193,
+        0.860850430262083
+      ],
+      "oklab": [
+        0.7419818714645947,
+        -0.059446200906919766,
+        -0.10296384028773199
+      ],
+      "labpack": "0xbde70d96"
+    }
+  ]
+}
